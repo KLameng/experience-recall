@@ -1,0 +1,194 @@
+{
+  "name": "经验与记忆管理工具",
+  "name_alias": "记忆与经验管理工具（同一件东西，两种叫法都指它）",
+  "version": "v6.66",
+  "built_at": "2026-11-26",
+  "edition": "empty",
+  "shell": true,
+  "host": "",
+  "install_rule": "Windows 用 解压.ps1（UTF-8）解压；Linux/macOS 直接 unzip。空库版：库是空骨架，卡 0 / 记忆 0 / 项目 0，不含任何个人数据，也不带 _seed 安装种子。",
+  "note": "files 为逐文件哈希（不含 MANIFEST 自身），按实物重算，非继承完整包清单（D144）。空库上跑 deploy_check 必然报「批准表不可用」、gate 必然 exit 2，属正常。 开源仓中 recall.py 已将写死的个人路径 C:\\Users\\<user>\\experience 改为 %USERPROFILE%\\experience，哈希按改后实物重算。",
+  "counts": {
+    "skill_files": 26,
+    "lib_files": 14,
+    "top_files": 4
+  },
+  "files": {
+    "看这里.txt": {
+      "sha256_16": "6c02fdd0aafe62a7",
+      "size": 3763
+    },
+    "自检.cmd": {
+      "sha256_16": "c5d40a0ff55f9c1d",
+      "size": 339
+    },
+    "自检.sh": {
+      "sha256_16": "56d79777aa7d1956",
+      "size": 90
+    },
+    "解压.ps1": {
+      "sha256_16": "f5efb610d696a47a",
+      "size": 993
+    },
+    ".user_skills/experience-recall/SKILL.md": {
+      "sha256_16": "dcbdffa4bed53e6c",
+      "size": 59663
+    },
+    ".user_skills/experience-recall/deploy_check.py": {
+      "sha256_16": "7b0387f864fa039c",
+      "size": 16768
+    },
+    ".user_skills/experience-recall/gate_with_pkg.py": {
+      "sha256_16": "42d9381396989c4c",
+      "size": 2678
+    },
+    ".user_skills/experience-recall/ledger_check.py": {
+      "sha256_16": "2def37cda83a525e",
+      "size": 12936
+    },
+    ".user_skills/experience-recall/project_layer.py": {
+      "sha256_16": "65a50e6129ac2258",
+      "size": 24358
+    },
+    ".user_skills/experience-recall/recall.py": {
+      "sha256_16": "bbd4854ed71fa831",
+      "size": 363622
+    },
+    ".user_skills/experience-recall/selftest_env_class.py": {
+      "sha256_16": "a12b6dd6acad2f9a",
+      "size": 2193
+    },
+    ".user_skills/experience-recall/test_deploy_check.py": {
+      "sha256_16": "7b05a6e3e05d12f4",
+      "size": 7499
+    },
+    ".user_skills/experience-recall/test_state_merge.py": {
+      "sha256_16": "c919081b09434c15",
+      "size": 9405
+    },
+    ".user_skills/experience-recall/test_state_section.py": {
+      "sha256_16": "8e306638af11c76c",
+      "size": 8562
+    },
+    ".user_skills/experience-recall/test_sync.py": {
+      "sha256_16": "a823c9a0e56cef4d",
+      "size": 9977
+    },
+    ".user_skills/experience-recall/test_task_row.py": {
+      "sha256_16": "2854f525c480a41f",
+      "size": 7915
+    },
+    ".user_skills/experience-recall/verify_promises.py": {
+      "sha256_16": "0d4f3709834f702a",
+      "size": 14738
+    },
+    ".user_skills/experience-recall/自检.cmd": {
+      "sha256_16": "c5d40a0ff55f9c1d",
+      "size": 339
+    },
+    ".user_skills/experience-recall/自检.py": {
+      "sha256_16": "7106b072c4b65278",
+      "size": 12149
+    },
+    ".user_skills/experience-recall/装法.txt": {
+      "sha256_16": "65c48a11bec8e419",
+      "size": 2963
+    },
+    ".user_skills/experience-recall/解压.ps1": {
+      "sha256_16": "f5f4859d537a210b",
+      "size": 1010
+    },
+    ".user_skills/experience-recall/core/__init__.py": {
+      "sha256_16": "1729c678051c38d0",
+      "size": 701
+    },
+    ".user_skills/experience-recall/core/__main__.py": {
+      "sha256_16": "d959b79f8f4f701f",
+      "size": 12880
+    },
+    ".user_skills/experience-recall/core/index.py": {
+      "sha256_16": "ccb236424bb3d93a",
+      "size": 6397
+    },
+    ".user_skills/experience-recall/core/ingest.py": {
+      "sha256_16": "5b77e46e5db03af5",
+      "size": 15960
+    },
+    ".user_skills/experience-recall/core/recall.py": {
+      "sha256_16": "947bce3fdafd916b",
+      "size": 7834
+    },
+    ".user_skills/experience-recall/core/schema.py": {
+      "sha256_16": "59e23c5cd798b9c1",
+      "size": 5900
+    },
+    ".user_skills/experience-recall/core/store.py": {
+      "sha256_16": "32bd044ea386f76e",
+      "size": 6601
+    },
+    ".user_skills/experience-recall/eval/检索评测集_v1.json": {
+      "sha256_16": "4ea415162e3c0e70",
+      "size": 3863
+    },
+    ".user_skills/experience-recall/eval/评测检索.py": {
+      "sha256_16": "8696ba99e5f00c34",
+      "size": 4055
+    },
+    "experience/current-work-state.md": {
+      "sha256_16": "06af942f3ffcb843",
+      "size": 587
+    },
+    "experience/从头读我.md": {
+      "sha256_16": "3f60ae000e2ae9cc",
+      "size": 1749
+    },
+    "experience/使用台账.jsonl": {
+      "sha256_16": "e3b0c44298fc1c14",
+      "size": 0
+    },
+    "experience/匹配索引.json": {
+      "sha256_16": "44136fa355b3678a",
+      "size": 2
+    },
+    "experience/发版流水_202611.md": {
+      "sha256_16": "f9aa387ab317fd09",
+      "size": 113
+    },
+    "experience/探针执行台账.jsonl": {
+      "sha256_16": "e3b0c44298fc1c14",
+      "size": 0
+    },
+    "experience/时效台账.json": {
+      "sha256_16": "44136fa355b3678a",
+      "size": 2
+    },
+    "experience/模板_经验卡.md": {
+      "sha256_16": "7c625d3bc833c15c",
+      "size": 881
+    },
+    "experience/状态变更史.jsonl": {
+      "sha256_16": "e3b0c44298fc1c14",
+      "size": 0
+    },
+    "experience/缺陷台账_20261112.md": {
+      "sha256_16": "1cec80a1c835c811",
+      "size": 277
+    },
+    "experience/memory/index.json": {
+      "sha256_16": "216acd573e91090d",
+      "size": 37
+    },
+    "experience/memory/memory_202611.jsonl": {
+      "sha256_16": "e3b0c44298fc1c14",
+      "size": 0
+    },
+    "experience/memory/preferences.jsonl": {
+      "sha256_16": "e3b0c44298fc1c14",
+      "size": 0
+    },
+    "experience/projects/index_projects.json": {
+      "sha256_16": "bfffedab549c761e",
+      "size": 58
+    }
+  }
+}

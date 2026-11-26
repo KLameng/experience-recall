@@ -1,0 +1,53 @@
+这个工具叫「经验与记忆管理工具」，也写作「记忆与经验管理工具」——两种叫法指的是同一件东西。
+
+> 文件夹名叫 `experience-recall`，那是它在这个平台的**登记号**，不是它的名字。
+> 平台按登记号同步和识别，本地改文件夹名会被同步改回来（实测过，一分钟内被还原）。
+> 所以：**名字看中文，路径照抄英文**。
+
+它由两个文件夹组成，必须并排放在同一个地方：
+
+    .user_skills/          放说明书和程序（含记忆程序 core/）
+    experience/            放仓库（经验卡、三本账、记忆）
+
+    .user_skills/experience-recall/recall.py    ← 程序在这儿
+    .user_skills/experience-recall/core/        ← 记忆程序在这儿
+    experience/                                 ← 仓库在这儿，在程序的上一层
+    experience/memory/                          ← 记忆（过程记录）在这儿
+    experience/资产册/                          ← 资产册（技能/工具/知识库的台账）在这儿
+
+**保持这个上下关系，不要拆开、不要改层级。** 程序靠"我在哪"自己算出仓库在哪。
+摆平了（两个文件夹随便放两个地方），程序不会报错，会跑去别处找仓库——这是唯一要小心的地方。
+
+---
+
+拿到包的人，三步：
+
+1. 解压到任意一个空文件夹。解压出来就是上面那个结构，已经是对的，什么都不用改。
+2. 跑自检：
+       Windows:   双击 自检.cmd
+       Mac/Linux: sh 自检.sh
+       或者任一手工方式:  python .user_skills/experience-recall/自检.py
+3. 看到"能用"两个字，就装好了。
+
+---
+
+装好之后能干什么：
+
+    python .user_skills/experience-recall/recall.py search 关键词    查历史经验
+    python .user_skills/experience-recall/recall.py log status       看账记到哪了
+    python .user_skills/experience-recall/recall.py stats            数库里有多少东西
+    python .user_skills/experience-recall/recall.py mem stats        数记忆里有多少条
+    python .user_skills/experience-recall/recall.py mem search --q 关键词   查某件事的过程
+    python .user_skills/experience-recall/recall.py asset scan       扫一遍，把技能和知识库记成账
+    python .user_skills/experience-recall/recall.py asset search 关键词  找资产（哪些技能干这件事）
+    python .user_skills/experience-recall/recall.py asset check      体检：谁没版本号、谁改了没升版
+
+不用装任何东西，不用联网，不用起服务。Python 3 自带就够。
+
+详细说明见 experience/从头读我.md
+
+## 空库版说明
+
+这一份**不带安装种子**（`_seed/` 已移除），库就是空的：卡 0、记忆 0、项目 0。换到任何机器上解压即可用，不需要落库动作。
+
+以后若要把整库搬到另一台机器，用完整包或 `restore --from`，不要指望空包带数据。
